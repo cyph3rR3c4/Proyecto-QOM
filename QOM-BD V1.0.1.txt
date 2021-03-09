@@ -1,0 +1,108 @@
+
+CREATE TABLE Administrador (
+  idAdministrador INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Rol_idRol INTEGER UNSIGNED NOT NULL,
+  Nombre VARCHAR(20) NULL,
+  Apellidos VARCHAR(20) NULL,
+  Correo VARCHAR(20) NULL,
+  Telefono INT NULL,
+  PRIMARY KEY(idAdministrador, Rol_idRol),
+  INDEX Administrador_FKIndex1(Rol_idRol)
+);
+
+CREATE TABLE Categoria (
+  idCategoria INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Nombre_de_la_categoria VARCHAR(20) NULL,
+  PRIMARY KEY(idCategoria)
+);
+
+CREATE TABLE clientes (
+  id_clientes INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Rol_idRol INTEGER UNSIGNED NOT NULL,
+  Nombre VARCHAR(20) NULL,
+  Telefono INT NULL,
+  Apellidos VARCHAR(20) NULL,
+  Correos VARCHAR(20) NULL,
+  Direccion  VARCHAR(20) NULL,
+  Estado_de_cliente  VARCHAR(20) NULL,
+  Categoria_de_cliente  VARCHAR(20) NULL,
+  PRIMARY KEY(id_clientes),
+  INDEX clientes_FKIndex1(Rol_idRol)
+);
+
+CREATE TABLE detalles_pedido (
+  id_deta_pedido INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  pedidos_clientes_id_clientes INTEGER UNSIGNED NOT NULL,
+  pedidos_id_pedidos INTEGER UNSIGNED NOT NULL,
+  productos_Categoria_idCategoria INTEGER UNSIGNED NOT NULL,
+  productos_id_productos INTEGER UNSIGNED NOT NULL,
+  cantidad_de_productos INT NULL,
+  PRIMARY KEY(id_deta_pedido),
+  INDEX detalles_pedido_FKIndex1(productos_id_productos, productos_Categoria_idCategoria),
+  INDEX detalles_pedido_FKIndex2(pedidos_id_pedidos, pedidos_clientes_id_clientes)
+);
+
+CREATE TABLE Inventario (
+  idInventario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Entradas  INT NULL,
+  Salidas  INT NULL,
+  Total INT NULL,
+  PRIMARY KEY(idInventario)
+);
+
+CREATE TABLE pedidos (
+  id_pedidos INTEGER UNSIGNED NOT NULL,
+  clientes_id_clientes INTEGER UNSIGNED NOT NULL,
+  Estado_del_pedido VARCHAR(20) NULL,
+  Fecha_del_pedido DATE NULL,
+  PRIMARY KEY(id_pedidos, clientes_id_clientes),
+  INDEX pedidos_FKIndex1(clientes_id_clientes)
+);
+
+CREATE TABLE productos (
+  id_productos INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Categoria_idCategoria INTEGER UNSIGNED NOT NULL,
+  nombre_producto VARCHAR(20) NULL,
+  precio INT NULL,
+  Presentacion  VARCHAR(20) NULL,
+  Fecha_de_vencimiento DATE NULL,
+  Marca VARCHAR(20) NULL,
+  PRIMARY KEY(id_productos, Categoria_idCategoria),
+  INDEX productos_FKIndex1(Categoria_idCategoria)
+);
+
+CREATE TABLE productos_has_Inventario (
+  productos_Categoria_idCategoria INTEGER UNSIGNED NOT NULL,
+  productos_id_productos INTEGER UNSIGNED NOT NULL,
+  Inventario_idInventario INTEGER UNSIGNED NOT NULL,
+  ingreso_de_productos  VARCHAR(20) NULL,
+  Salida_de_productos  VARCHAR(20) NULL,
+  Saldo  INT NULL,
+  Fecha_de_movimiento  DATE NULL,
+  Tipo_de_movimiento  VARCHAR(20) NULL,
+  Producto  VARCHAR(20) NULL,
+  Cantidad  INT NULL,
+  PRIMARY KEY(productos_Categoria_idCategoria, productos_id_productos, Inventario_idInventario),
+  INDEX productos_has_Inventario_FKIndex1(productos_id_productos, productos_Categoria_idCategoria),
+  INDEX productos_has_Inventario_FKIndex2(Inventario_idInventario)
+);
+
+CREATE TABLE Rol (
+  idRol INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  Usuario INTEGER UNSIGNED NULL,
+  Contraseña VARCHAR(20) NULL,
+  PRIMARY KEY(idRol)
+);
+
+CREATE TABLE Tipo_de_inventario  (
+  idTipo_de_inventario  INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  productos_has_Inventario_Inventario_idInventario INTEGER UNSIGNED NOT NULL,
+  productos_has_Inventario_productos_id_productos INTEGER UNSIGNED NOT NULL,
+  productos_has_Inventario_productos_Categoria_idCategoria INTEGER UNSIGNED NOT NULL,
+  Fecha_de_movimiento  DATE NULL,
+  Tipo_de_movimento  VARCHAR(20) NULL,
+  Cantidad_de_producto VARCHAR(20) NULL,
+  PRIMARY KEY(idTipo_de_inventario ),
+  INDEX Tipo_de_inventario_FKIndex1(productos_has_Inventario_productos_Categoria_idCategoria, productos_has_Inventario_productos_id_productos, productos_has_Inventario_Inventario_idInventario)
+);
+
