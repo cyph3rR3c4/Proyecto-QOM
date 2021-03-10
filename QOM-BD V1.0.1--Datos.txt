@@ -1,0 +1,90 @@
+INSERT INTO Administrador 
+
+(idAdministrador,Rol_idRol,Nombre,Apellidos,Correo,Telefono) values
+("1", "001","Juan","Valdes", "Juan@qom.com", "3040615983"),
+("2", "002","Dayana","Villalobos", "Daya004@qom.com", "3040615983"),
+("3", "003","Jenni","Cetina", "Jenni003@qom.com","3040615983"),
+("4", "004","Judani","Vavice", "judani@qom.com", "3040615983")
+
+
+INSERT INTO Categoria
+
+(idCategoria,Nombre_de_la_categoria) values
+("1", "Preparados"),
+("2", "Bebidas"),
+("3", "Preparados"),
+("4", "Empaquetados")
+
+INSERT INTO clientes
+
+(id_clientes,Rol_idRol,Nombre,Telefono,Apellidos,Correos,Direccion,Estado_de_cliente,Categoria_de_cliente) values
+("1", "21","Luis","3040615983", "García", "luis@gmail.com", "00", "Activo", "Aprendiz"),
+("2", "22","Álvaro","3819948289","Rodríguez", "Albaro@gmail.com", "00", "Activo", "Instructor"),
+("3", "23","Luisa","3040615983","Garzon", "luisa@gmail.com", "00", "Activo", "Aprendiz"),
+("4", "24","Ángel","3819948289","Roa", "Angel@gmail.com", "00", "Activo", "Instructor")
+
+INSERT INTO detalles_pedido 
+
+(id_deta_pedido,pedidos_clientes_id_clientes,pedidos_id_pedidos,productos_Categoria_idCategoria,productos_id_productos,cantidad_de_productos) values
+("200", "1","4000","1","800","3"),
+("201", "2","4001","2","801","4"),
+("202", "3","4002","3","802","5"),
+("203", "4","4003","4","803","6")
+
+INSERT INTO Inventario
+
+(idInventario,Entradas,Salidas,Total)  values
+("300","3","2","1"),
+("301","4","3","1"),
+("302","5","4","1"),
+("303","6","5","1")
+
+Las fechas estan (AA-MM-DD)
+
+INSERT INTO pedidos
+
+(id_pedidos,clientes_id_clientes,Estado_del_pedido,Fecha_del_pedido)  values
+("4000","1","Cancelado","2021-03-02"), (AA-MM-DD)
+("4001","2","Espera","2021-04-02"),
+("4002","3","Cancelado","2021-05-02"),
+("4003","4","Espera","2021-06-02")
+
+
+INSERT INTO productos
+
+(id_productos,Categoria_idCategoria,nombre_producto,precio,Presentacion,Fecha_de_vencimiento,Marca)  values
+("800","1","Empanada","1000","Servilleta","2021-07-12","a"),
+("801","2","pepsi","1500","Botella","2021-08-12","a"),
+("802","3","Sandwich","1500","Servilleta","2021-09-12","a"),
+("803","4","Chettos","1000","Paquete","2021-10-12","a")
+
+INSERT INTO productos_has_Inventario 
+
+(productos_Categoria_idCategoria,productos_id_productos,Inventario_idInventario,ingreso_de_productos,Salida_de_productos,Saldo,Fecha_de_movimiento,Tipo_de_movimiento,Producto,Cantidad)  values
+("1","800","300","3","2","1","2021-07-12","Entrada","Empanada","3"),
+("2","801","301","4","3","1","2021-07-12","Entrada","pepsi","4"),
+("3","802","302","5","4","1","2021-07-12","Salida","Sandwich","5"),
+("4","803","303","6","5","1","2021-07-12","Salida","Chettos","6")
+
+Nota revisa que "usuario" tenga el tipo de dato varchar de lo contrario se va a crear un error :C
+
+INSERT INTO Rol
+
+(idRol,Usuario,Contraseña) values
+("001","JuanV","1234"),
+("002","DayanaV","5678"),
+("003","JenniC","abcd"),
+("004","JudaniV","efgh"),
+("21","LuisG","ijkm"),
+("22","AlbaroR","nñop"),
+("23","LuisaG","qors"),
+("24","AngelR","zyix")
+
+
+INSERT INTO Tipo_de_inventario 
+
+(idTipo_de_inventario,productos_has_Inventario_Inventario_idInventario,productos_has_Inventario_productos_id_productos,productos_has_Inventario_productos_Categoria_idCategoria,Fecha_de_movimiento,Tipo_de_movimento,Cantidad_de_producto)  values
+("900","300","800","1","2021-07-12","Entrada","3"),
+("901","301","801","2","2021-07-12","Entrada","4"),
+("902","302","802","3","2021-07-12","Salida","5"),
+("903","303","803","4","2021-07-12","Salida","6")
