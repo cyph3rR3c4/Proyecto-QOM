@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QOM-gestion de pedidos</title>
+
+    <!--- link a el archivo .css-->
+    <link rel="stylesheet" href="css/hoja de estilo.css">
+</head>
+<body>
+    <!---- Aqui empieza la barra de navegación--->
+     <section class="barra de navegación">
+        <div class="container">
+            <div class="logo">
+                <img src="imágenes/Logo.jpg" alt="Logo Proyecto" class="image-responsive">
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index2.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="categorías.html">Categorías</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!---- Aqui termina la barra de navegación--->
+
+    <!---- Aqui empieza la sección de "buscar comida"--->
+    <section class=" text-center buscar-comida2">
+        <div class="container">
+
+            <h2 class="text-center text-colorwhite">Llena los siguientes datos.</h2>
+
+            <form action="#" class="order">
+                <fieldset class="">
+                    <legend>Producto seleccionado</legend>
+
+                    <div class="menú-imagen">
+                        <img src="imágenes/Empanada.jpg" alt="" class="image-responsive image-curve">
+                    </div>
+    
+                    <div class="menú-desc">
+                        <h3 class="text-center">N.producto</h3>
+                        <p class="precio-producto">$</p>
+
+                        <div class="order-label">Cantidad</div>
+                        <input type="number" name="cantidad" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Detalles pedido</legend>
+                    <div class="order-label">Nombres y Apellidos </div>
+                    <input type="text" name="full-name" placeholder="@Nombre" class="input-responsive" required>
+
+                    <div class="order-label">Número Celular</div>
+                    <input type="tel" name="contact" placeholder="Ej: 320 XXX XXX" class="input-responsive" required>
+
+
+                    <input type="submit" name="submit" value="Confirmar pedido" class="boton boton-color">
+                </fieldset>
+
+            </form>
+
+        </div>
+    </section>
+
+
+      <!---- Aqui empieza la sección de "pie de página"--->
+      <section class="pie de página buscar-comida2" >
+        <div class="container">
+        
+        </div>
+
+
+    </section>
+    <!---- Aqui termina la sección de "pie de página"--->
+            
+        
+
+          
+   

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="basket" unicode="&#xe800;" d="M357-7q0-29-21-50t-50-22-50 22-22 50 22 50 50 21 50-21 21-50z m500 0q0-29-21-50t-50-22-50 22-22 50 22 50 50 21 50-21 21-50z m72 607v-286q0-13-10-23t-22-12l-583-68q7-34 7-40 0-8-13-35h513q15 0 26-11t10-25-10-25-26-11h-571q-14 0-25 11t-11 25q0 6 5 18t9 20 12 22 8 17l-98 459h-114q-15 0-25 10t-11 25 11 26 25 10h143q9 0 16-3t10-9 8-14 4-14 3-17 3-14h670q14 0 25-11t11-25z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="basket-1" unicode="&#xe801;" d="M139 76c45 0 79-35 79-79 0-43-34-78-79-78-43 0-78 35-78 78 0 44 35 79 78 79z m530 0c44 0 77-35 77-79 0-43-33-78-77-78s-79 35-79 78c0 44 35 79 79 79z m-478 588l565 0c38 0 55-22 55-50l0-233c0-27-20-48-46-50l-505-57c-41-5-46-58 3-58l478 0c55 0 55-82 0-82l-488 0c-110 0-152 122-65 185l43 33-155 339-76 0c-59 0-59 90 0 90l89 0c45 0 57-22 71-54z m345-70l-130 0 27-85 123 0z m-312 0l39-85 126 0-28 85-137 0z m109-241l100 10-33 101-119 0z m143 15l113 11-25 85-119 0z m267 29l0 67-133 0 20-78z m0 112l0 85-162 0 19-85 143 0z" horiz-adv-x="811" />
+
+<glyph glyph-name="bag" unicode="&#xe802;" d="M835 668q28-26 24-60l-98-648q-8-30-38-30l-586 0q-28 0-40 30-94 620-96 648-5 34 22 60 6 6 54 43t56 43q18 16 56 16l480 0q38 0 56-16 78-58 110-86z m-406-436q56 0 98 34t63 89 30 89 13 66l-92 0q-38-188-112-188t-112 188l-92 0q46-278 204-278z m-352 368l704 0-110 116-484 0z" horiz-adv-x="859" />
+</font>
+</defs>
+</svg>

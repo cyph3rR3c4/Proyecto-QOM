@@ -1,0 +1,301 @@
+
+
+/* Diseño general */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%; 
+}
+.image-responsive{
+    width: 90%;
+}
+.image-curve{
+    border-radius: 25px;
+}
+
+.image-resize{
+    width: 10%;
+    height: 10%;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-colorwhite{
+    color: rgb(255, 255, 255);
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.boton{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.boton2{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    float: right;
+
+}
+
+.boton-color{
+    background-color: #242B2E;
+    color: white;
+    cursor:pointer;
+}}
+.boton-color:hover{
+    color: white;
+    background-color: #02B290;
+
+}
+.boton2-color{
+    background-color: #3C494F;
+    color: white;
+    cursor:pointer;
+}
+
+.boton2-color:hover{
+    color: white;
+    background-color: #02B290;
+
+}
+
+.float-container{
+    position: relative;
+
+}
+
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left:30%;
+}
+
+h2{
+    color: #242B2E;
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+a{
+    color: #02B290;
+    text-decoration: none;
+}
+a:hover{
+    color: #02B290;
+}
+
+/* Diseño de la barra de navegación */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+.fondo-pedidos{
+    background-color: #008b8a;
+     padding: 4% 0 ;
+}
+
+/* Diseño de la sección "buscar comida" */
+
+.buscar-comida{
+    background-image: url(../imágenes/dark-cyan-color.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+    
+}
+
+.buscar-comida2{
+    background-image: url(../imágenes/dark-cyan-color.jfif);
+}
+
+
+.buscar-comida input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* Diseño de la sección "Categorías" */
+
+.categorías{
+    padding: 3% 0;
+}
+
+.categori_1{
+    
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+/* Diseño menu comida */
+
+.menú-colorfondo{
+    background-color: #ececec;
+    padding: 4% 0 ;
+}
+
+.menú-1{
+    width: 43%;
+    padding: 2%;
+    margin: 1%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.menú-imagen{
+    width: 20%;
+    float: left;
+    
+}
+  
+.menú-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+} 
+
+.precio-producto{
+    font-size: 1.2rem;
+    margin: 2% 0;
+
+}
+.detalle-producto{
+    font-size: 1rem;
+    color: #758283;
+
+}
+.cancelado{
+    background-color: #FFC3C3
+}
+.espera{
+    background-color: #FFFAB2
+}
+
+.entregado{
+    background-color: #D1FFB3
+}
+
+/*Diseño para celulares o pantallas pequeñas*/
+
+@media only screen and (max-width:768px){
+
+    .logo{
+        width: 70%;
+        float: none;
+        margin: 1% auto;
+    }
+
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .buscar-comida input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+
+    .buscar-comida{
+        padding: 10% 0;
+    }
+
+    .boton{
+        width: 91%;
+        padding: 2%;
+
+    }
+    .categorías{
+        padding: 20% 0;
+    }
+    .h2{
+        margin-bottom: 10% auto;
+    }
+
+    .categori_1{
+        width: 90%;
+        margin-bottom: 4% auto;
+    
+    }
+
+    .menú-colorfondo{
+        padding: 20% 0 auto;
+    }
+    
+    .menú-1{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+      
+    }
+
+
+}
+
+
+/* Diseño seccion pedido*/
+.order{
+    width: 50%;
+    margin: 0 auto;
+    
+    
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 1px;
+    font-size: 1rem;
+    
+}
+
+
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+    margin: none;
+
+}
+
+
+

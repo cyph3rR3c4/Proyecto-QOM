@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu {
+padding: 6% 0;
+background-color: #008b8a;
+}
+ 
+#slices {
+padding: 1% 0;
+background-color: #ECECEC;
+}
+ 
+#cuerpo {
+height: 700px;
+background-color: #FFFFFF;
+}
+ 
+#contenedor {
+width: auto;
+background-color: #ECECEC;
+}
+ 
+#footer {
+height: 50px;
+width: 968px;
+background-color: #C09;
+}
+.columna {
+    float:left;
+    width:33%;
+    border:1px solid;
+
+}
+.buscar-comida{
+    background-image: url(../imágenes/dark-cyan-color.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+    
+}
+.table {
+	width:100%;
+}
+
+h6 {
+	color: #FFFFFF;
+    font-size: 2rem;
+}   
+
+h1 {
+	color: #242B2E;
+	font-size: 2rem;
+}
+a1{
+    color: #02B290;
+    text-decoration: none;
+    position: left;
+}
+a1:hover{
+    color: #02B290;
+}
+a2{
+    color: #242B2E;
+}
+.boton1{
+	float: right;
+    padding: 1%;
+    margin-right: 1%;
+    margin-top: -8%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.boton1-color{
+    background-color: #242B2E;
+    color: white;
+    cursor:pointer;
+}
+
+.boton1-color:hover{
+    color: white;
+    background-color: #02B290;
+
+}
+.productos-1{
+    width: 43%;
+    padding: 2%;
+    margin: 1%;
+    float: right;
+    background-color: black;
+    border-radius: 15px;
+    border: red 2px solid;
+}
+.ye{
+    line-height: 60px;
+}
+.ye ul{
+    list-style-type: none;
+}
+
+.ye ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    float: center;
+}
+.bebidas{
+
+    padding: 1%;
+    margin-right: 1%;
+    margin-top: -8%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.empaquetados{
+    float: center;
+    padding: 1%;
+    margin-right: 1%;
+    margin-top: -8%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.Preparados{
+    float: right;
+    padding: 1%;
+    margin-right: 1%;
+    margin-top: -8%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+ /*---------------Boton flotante---------*/
+
+#btn-mas{
+    display: none;
+}
+.container5{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a5, icon-mas2{
+    display: block;
+    text-decoration: none;
+    background: #008b8a;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 60%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a5: hover{
+    background: #FFFFFF;
+    color: #008b8a;
+}
